@@ -63,6 +63,7 @@ body {
 .form__div input[type="text"]{
     color: var(--Very_dark_cyan);
     width: 100%;
+    height: 100%;
     padding: 2vw 3vw;
     border-radius: 5px;
     border: none;
@@ -103,6 +104,21 @@ body {
     height: 100%;
     border-radius: 5px;
     padding: 2vw 0;
+}
+#select-tip-ctn label:hover, input[type="text"]:hover {
+    cursor: pointer;
+}
+#custom+label {
+    padding: 0 0;
+    border-radius: 5px;
+    background-color: var(--Very_light_grayish_cyan);
+}
+#select-tip-ctn>input:checked + label{
+    background: var(--Strong_cyan);
+    color: var(--Very_dark_cyan);
+}
+input[type="text"]:focus {
+    outline: solid var(--Strong_cyan) 2px;
 }
 #results-ctn {
     background: var(--Very_dark_cyan);

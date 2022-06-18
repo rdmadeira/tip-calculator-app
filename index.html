@@ -23,17 +23,20 @@
         <div class="form__div form__div-2">
           <label for="per5">Select Tip %</label>
           <div id="select-tip-ctn">
-            <input type="radio" name="select-tip" value="5" id="per5"/><label for="select-tip">5%</label> 
-            <input type="radio" name="select-tip" value="10" id="per10"/><label for="select-tip">10%</label>  
-            <input type="radio" name="select-tip" value="15" id="per15"/><label for="select-tip">15%</label>  
-            <input type="radio" name="select-tip" value="25" id="per25"/><label for="select-tip">25%</label>  
-            <input type="radio" name="select-tip" value="50" id="per50"/><label for="select-tip">50%</label>  
-            <input type="text" placeholder="Custom"/>
+            <input type="radio" name="select-tip" value="5" id="per5"/><label for="per5">5%</label> 
+            <input type="radio" name="select-tip" value="10" id="per10"/><label for="per10">10%</label>  
+            <input type="radio" name="select-tip" value="15" id="per15"/><label for="per15">15%</label>  
+            <input type="radio" name="select-tip" value="25" id="per25"/><label for="per25">25%</label>  
+            <input type="radio" name="select-tip" value="50" id="per50"/><label for="per50">50%</label>  
+            <input type="radio" name="select-tip" id="custom" value="custom"/>
+            <label for="custom">
+              <input type="text" id="custom-input" placeholder="Custom" name="select-tip"/>
+            </label>
           </div>
         </div>
         <div class="form__div form__div-3">
-          <label for="">Number of People</label>
-          <input type="text" name="number-of-people" id="number-of-people">          
+          <label for="number-of-people">Number of People</label>
+          <input type="text" name="number-of-people" id="number-of-people" required>          
         </div>   
         <div id="results-ctn">
           <div class="results-ctn__div">
@@ -41,14 +44,14 @@
               <h2>Tip Amount</h2>
               <span>/ person</span>
             </div>
-            <div id="result-tip-amount" class="result-div">$5.02</div>
+            <div id="result-tip-amount" class="result-div"></div>
           </div>
           <div class="results-ctn__div">
             <div>
               <h2>Total</h2>
               <span>/ person</span>
             </div>
-            <div id="result-total" class="result-div">$25.02</div>
+            <div id="result-total" class="result-div"></div>
           </div>
           <div class="results-ctn__div reset-div">
             <input type="reset" value="Reset" name="RESET" id="reset-btn"/>
