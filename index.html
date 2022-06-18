@@ -35,8 +35,11 @@
           </div>
         </div>
         <div class="form__div form__div-3">
-          <label for="number-of-people">Number of People</label>
-          <input type="text" name="number-of-people" id="number-of-people" required>          
+          <div class="form__div-3__div">
+            <label for="number-of-people">Number of People</label>
+            <span id="required-num"></span>
+          </div>
+          <input type="text" name="number-of-people" pattern="^[0-9]+" id="number-of-people" required>          
         </div>   
         <div id="results-ctn">
           <div class="results-ctn__div">

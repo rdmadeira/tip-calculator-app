@@ -54,7 +54,7 @@ body {
     flex-direction: column;
     row-gap: 4vh;
 }
-.form__div> label{
+.form__div label{
     display: block;
     color: var(--Dark_grayish_cyan);
     font-size: 1.1rem;
@@ -119,6 +119,14 @@ body {
 }
 input[type="text"]:focus {
     outline: solid var(--Strong_cyan) 2px;
+}
+#required-num {
+    font-size: 0.6em;
+    color: hsl(0deg 76% 52%);
+}
+.form__div-3__div {
+    display: flex;
+    justify-content: space-between;
 }
 #results-ctn {
     background: var(--Very_dark_cyan);
