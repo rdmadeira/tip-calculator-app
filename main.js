@@ -3,16 +3,19 @@ window.onload = () => {
     const customInput = document.getElementById('custom-input');
     customInput.addEventListener('focus', ()=> {
         customRadio.checked = true;
-        customInput.style.backgroundColor = 'var(--Strong_cyan)';
+        calculate();
     });
     customInput.addEventListener('input', ()=> {
         customRadio.setAttribute('value', customInput.value);
     });
-    let inputsAll = document.querySelectorAll('input');
-    inputsAll.forEach(item => item.addEventListener('input',calculate))
-    
+
+    let inputstxtAll = document.querySelectorAll('input[type="text"]');
+    inputstxtAll.forEach(item => item.addEventListener('input',calculate));
+    let inputCheck = document.querySelectorAll('input[type="radio"]');
+    inputCheck.forEach( item => item.addEventListener('change',calculate));
+
     function calculate() {
-        const bill = document.getElementById('bill-input').value;
+        let bill = document.getElementById('bill-input').value;
         let tipValue;
         let tipInputs = document.getElementsByName('select-tip');
         tipInputs.forEach( item => item.checked ? tipValue = item.value : tipValue );
@@ -23,15 +26,19 @@ window.onload = () => {
         const resultTotalDiv = document.getElementById('result-total');
         const resultTip = Number(bill) * (Number(tipValue)/100) / Number(people,10);
         const resultTotal = Number(bill) / Number(people) + resultTip;
-        resultTipDiv.textContent = '$0.00'
-        resultTotalDiv.textContent = '$0.00'
-        if(people===0 ||people==''){
+        resultTipDiv.textContent = '$0.00';
+        resultTotalDiv.textContent = '$0.00';
+        if(people===0 || people==''){
             requiredNumPos.textContent = 'Can´t be zero!';
             document.getElementById('number-of-people').style.outline = 'solid hsl(0deg 76% 52%) 2px';
         } else if(people < 0 || isNaN(people)) {
             requiredNumPos.textContent = 'Only (+) numbers!';
             document.getElementById('number-of-people').style.outline = 'solid hsl(0deg 76% 52%) 2px';
-        } else {
+        } else if(!Number.isInteger(people)) {
+            requiredNumPos.textContent = 'Only integer numbers!';
+            document.getElementById('number-of-people').style.outline = 'solid hsl(0deg 76% 52%) 2px';
+        }
+        else {
             requiredNumPos.textContent = '✅';
             document.getElementById('number-of-people').style.outline = 'solid var(--Strong_cyan) 2px';
             resultTipDiv.textContent = '$'+resultTip.toFixed(2);
