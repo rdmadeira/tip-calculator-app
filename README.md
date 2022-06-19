@@ -12,11 +12,9 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
@@ -35,8 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://rdmadeira.github.io/tip-calculator-app/)
 
 ## My process
 
@@ -49,7 +46,6 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -61,7 +57,6 @@ I was able to review some CSS and HTML concepts, elements and selectors. I learn
 
 I'd like to simplificate and optimizate code, applying Code Review and updating performance.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ## Author
 
