@@ -19,7 +19,7 @@
         <div>
           <div class="form__div form__div-1">
           <label for="bill">Bill</label>
-          <input type="text" name="bill" id="bill-input" required/>
+          <input type="text" name="bill" id="bill-input" inputmode="decimal" required/>
           </div>
           <div class="form__div form__div-2">
           <label for="per5">Select Tip %</label>
@@ -31,7 +31,7 @@
             <input type="radio" name="select-tip" value="50" id="per50"/><label for="per50">50%</label>  
             <input type="radio" name="select-tip" id="custom" value="0"/>
             <label for="custom" id="custom-label">
-              <input type="text" id="custom-input" placeholder="Custom"/>
+              <input type="text" id="custom-input" placeholder="Custom" inputmode="decimal"/>
             </label>
           </div>
           </div>
@@ -40,7 +40,7 @@
             <label for="number-of-people">Number of People</label>
             <span id="required-num"></span>
           </div>
-          <input type="text" name="number-of-people" pattern="^[0-9]+" id="number-of-people" required>          
+          <input type="text" name="number-of-people" pattern="^[0-9]+" inputmode="numeric" id="number-of-people" required>          
           </div>
         </div>   
         <div id="results-ctn">
