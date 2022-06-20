@@ -187,7 +187,7 @@ body {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media all and (min-width:376px) and (orientation:portrait) {
+@media all and (min-width:376px) and (max-aspect-ratio: 4 / 5) {
     #main__div-logo {
         padding: 7vh 0;
     }
@@ -219,7 +219,7 @@ body {
         padding: 1.5vw 0;
     }
 }
-@media all and (min-width:376px) and (orientation:landscape) {
+@media all and (min-width:376px) and (min-aspect-ratio: 4 / 5) {
     #main__div-logo {
         transform: scale(0.6);
         padding: 0 0;
