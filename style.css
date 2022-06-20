@@ -298,10 +298,26 @@ body {
 }
 @media all and (min-width:1440px) {
     #main__div-logo {
-        top: 10vh;
+        top: 19vh;
     }
     #calculator-main {
         width: 55%;
+        max-width: 625px;
+    }
+    .form__div label, #required-num {
+        font-size: 0.5em;
+    }
+    .form__div input[type="text"] {
+        font-size: min(1.6vw,25px);
+    }
+    .results-ctn__div h2, .results-ctn__div span {
+        font-size: 0.5em;
+    }
+    .result-div {
+        font-size: 1.1em;
+    }
+    #reset-btn {
+        font-size: 0.5em;
     }
     
 }
