@@ -219,23 +219,24 @@ body {
         padding: 1.5vw 0;
     }
 }
-@media all and (min-width:1440px), (orientation:landscape) {
+@media all and (min-width:376px) and (orientation:landscape) {
     #main__div-logo {
         transform: scale(0.6);
+        padding: 0 0;
         position: absolute;
-        top: 10vh;
+        top: calc(50vh / 2 - 160px / 2);
     }
     #calculator-main {
         padding: 2.5vh 2.5vw;
         border-radius: 12px 12px 12px 12px;
-        width: 55%;
+        width: 70%;
         max-width: 500px;
+        position: relative;
     }
     #calculator-form {
         flex-direction: row;
-        max-height: 40vh;
         column-gap: 3vw;
-        max-width: 55vw;
+        
     }
     #calculator-form>div {
         width: 50%;
@@ -294,6 +295,13 @@ body {
         font-size: 0.37em;
         border-radius: 4px;
     }
-    
+}
+@media all and (min-width:1440px) {
+    #main__div-logo {
+        top: 10vh;
+    }
+    #calculator-main {
+        width: 55%;
+    }
     
 }
